@@ -3,12 +3,11 @@
 import { motion } from 'framer-motion';
 import { Question, QuestionOption } from '@/types';
 import Card from '@/components/ui/Card';
-import Button from '@/components/ui/Button';
 
 interface QuestionCardProps {
   question: Question;
-  onAnswer: (value: any) => void;
-  selectedValue?: any;
+  onAnswer: (value: string | number | boolean | string[]) => void;
+  selectedValue?: string | number | boolean | string[];
 }
 
 export default function QuestionCard({ question, onAnswer, selectedValue }: QuestionCardProps) {

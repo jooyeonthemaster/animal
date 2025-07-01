@@ -26,7 +26,7 @@ export default function Home() {
     setIsQuizStarted(true);
   };
 
-  const handleAnswer = (value: any) => {
+  const handleAnswer = (value: string | number | boolean | string[]) => {
     const question = questions[currentStep];
     setUserProfile(prev => ({
       ...prev,

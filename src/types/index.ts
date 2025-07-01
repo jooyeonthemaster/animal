@@ -100,7 +100,7 @@ export interface Question {
 }
 
 export interface QuestionOption {
-  value: any;
+  value: string | number | boolean | string[];
   label: string;
   description?: string;
   emoji?: string;
